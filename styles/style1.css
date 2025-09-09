@@ -1,0 +1,52 @@
+form{
+            display: flex;
+            flex-direction: column;
+            padding:30px 40px ;
+            
+        }
+        .container{
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .inn-con{
+             border: solid 2px;
+            height: 300pxpx;
+            width: 350px;
+            display: flex;
+           padding: 20px;
+            border-radius: 6px;  
+            transition: box-shadow 0.6s ease-in ;
+            transition: transform 0.5s ease-in ; 
+            
+        }
+        .inn-con:hover{
+            box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            transform: scale(1.0);
+        }
+        
+        input{
+            border-radius: 5px;
+            height: 30px;
+            width: 230px;
+           
+        }
+        .sub{
+             margin-top: 30px;
+             width: 100px;
+             margin-left: 65px;
+             transition: background-color 0.4s ease-in;
+        }
+        .sub:hover{
+             background-color: #ff4c70;
+            color: white;
+        }
+        p a{
+            text-decoration: none;
+            color:#ff4c70;
+            font-weight: 700;
+        }
+        p a:hover{
+            color:black;
+        }
