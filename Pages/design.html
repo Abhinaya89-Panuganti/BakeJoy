@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Own Cake</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/Navbar.css">
+    <link rel="stylesheet" href="../styles/Footer.css">
+</head>
+      <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            padding:30px 40px ;
+            
+        }
+        .design-container{
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .des-inncon{
+             border: solid 2px;
+            height: 650px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+           padding: 20px;
+            border-radius: 6px;  
+            transition: box-shadow 0.6s ease-in ;
+            transition: transform 0.5s ease-in ; 
+            
+        }
+        .des-inncon:hover{
+            box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            transform: scale(1.0);
+        }
+       select{
+         border-radius: 5px;
+            height: 40px;
+            width: 350px;
+            margin-bottom: 15px;
+            font-size: 15px;
+             border: solid 1px;
+       }
+       input{
+         border-radius: 5px;
+        height: 40px;
+        width: 350px;
+         margin-bottom: 15px;
+         font-size: 15px;
+          border: solid 1px;
+       }
+       textarea{
+         border-radius: 5px;
+            width: 350px;
+             margin-bottom: 15px;
+           font-size: 15px;
+           border: solid 1px;
+       }
+       label{
+        font-size: 19px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       }
+       .des-heading{
+         font-size: 40px;
+        font-weight: 700;
+        margin-top: 30px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+       }
+       .des-title{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        color:#ff4c70 ;
+       }
+       .des-btn{
+        margin-top: 15px;
+        height: 40px;
+        width: 200px;
+        border-radius: 8px;
+        font-size: 18px;
+        margin-left: 95px;
+        transition: background-color 0.3s ease-in ;
+        box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: #ffd8e0;
+       }
+       .des-btn:hover{
+        background-color: #ff4c70 ;
+       }
+      </style>
+<body>
+    
+     <!-- Nav bar -->
+    <section>
+        <nav>
+        <div class="left"> <a href="../index.html">Bakejoy</a></div>
+        <div class="right">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                 <li><a href="./about.html" class="abt-hover">About</a></li>
+                <li><a href="./contact.html" class="abt-hover">Contact</a></li>
+                <li><a href="./login.html"><button>Login</button></a></li>
+                <li><a href="./signup.html"><button>Sign Up</button></a></li>
+            </ul>
+        </nav>
+        </div>
+    </section>
+
+
+    <!-- Design own Cake -->
+    <section>
+    <p class="des-heading">Design Your Cake</p>
+    <div class="design-container">
+        <div class="des-inncon">
+            <p class="des-title">Create Your Cake</p>
+            <form action="">
+                <label for="base">Cake Base</label>
+                <select  id="base" required>
+                <option value="">--Select a base--</option>
+                <option>Chocolate</option>
+                <option>Vanilla</option>
+                <option>Red velvet</option>
+                <option>Pineapple</option>
+                <option>Butterscotch</option>
+                </select>
+                
+                 <label for="Frosting">Frosting</label>
+                <select  id="Frosting" required>
+                <option value="">--Select frosting--</option>
+                <option>Buttercream</option>
+                <option>Fondant</option>
+                <option>Whipped Cream</option>
+                <option>Ganache</option>
+                <option>Royal Icing</option>
+                </select>
+
+                 <label for="Toppings">Toppings</label>
+                <select  id="Toppings" required>
+                <option value="">--Select topping--</option>
+                <option>Sprinkles</option>
+                <option>Nuts</option>
+                <option>Fruits</option>
+                <option>Chocolate Chips</option>
+                <option>Edible Glitter</option>
+                </select>
+
+                <label for="text">Message On Cake</label>
+                <input type="text" placeholder="e.g Happy Birthday">
+
+                <label for="instruction">Special Instructions</label>
+                <textarea  id="instruction" rows="6" placeholder="Write any special requests..." ></textarea>
+
+                <button class="des-btn">Submit Cake Design</button>
+            </form>
+        </div>
+    </div>
+    </section>
+
+      <!-- footer -->
+      <section>
+        <footer class="footer">
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">
+              <img src="../images/facebook.png" alt="Facebook">
+            </a>
+             <a href="https://twitter.com" target="_blank">
+              <img src="../images/twitter.png" alt="Twitter">
+            </a>
+             <a href="https://instagram.com" target="_blank">
+              <img src="../images/instagram.png" alt="Instagram">
+            </a>
+             <a href="https://linkedin.com" target="_blank">
+              <img src="../images/linkedin.png" alt="LinkedIn">
+            </a>
+             <a href="https://youtube.com" target="_blank">
+              <img src="../images/youtube.png" alt="YouTube">
+            </a>
+          </div>
+           <p class="footer-para"> &copy; 2025 BakeJoy. All Rights Reserved</p>
+        </footer>
+      </section>
+</body>
+</html>

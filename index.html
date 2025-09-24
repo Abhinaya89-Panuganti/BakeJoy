@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakejoy</title>
+    <link rel="stylesheet" href="./styles/Navbar.css">
+    <link rel="stylesheet" href="./styles/Footer.css">
+    <style>
+      .hero-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+      }
+      .hero-img{
+         height:300px ;
+         width: 250px;
+      }
+      img{
+        height:300px ;
+        width: 250px;
+        border-radius: 8px;
+        margin-left: 25pxpx;
+        transition:transfom 0.5s ease-in ;
+        transition: box-shadow 0.5s ease-in;
+      }  
+      img:hover{
+        transform:scale(1.03);
+        box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .para1{
+        font-size: 40px;
+        font-weight: 700;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+      }
+      .para2{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-right: 20px;
+        margin-left: 20px;
+        text-align: justify;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .hero-btn{
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 8px;
+        padding: 10px 15px;
+        width: 250px;
+        margin: 30px 500px;
+        background-color:#ff4c70;
+        color: white;
+        border: solid;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        transition:background-color 0.4s ease-in ;
+        transition: transform 0.4s ease-in ;
+      }
+      .hero-btn:hover{
+         background-color: #f86e8a;
+         transform: scale(1.03);
+      }
+      .cake-img{
+        height:220px;
+        width:260px;
+      }
+      .cake-item{
+         height:220px;
+        width:250px;
+      }
+      .cake-container{
+        width: 280px;
+        height:370px;
+        background-color: #fbd6dd;
+        border-radius: 8px;
+        padding: 10px 10px;
+        transition: transform 0.4s ease-in ;
+      }
+      .cake-container:hover{
+        transform: scale(1.02);
+
+      }
+      .cake-btn{
+         display: flex;
+         justify-content: space-between;  
+         margin-top: 15px;
+        
+      }
+      .cake-title{
+        margin: 8px 6px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+      }
+      .cake-btn button:hover{
+        background-color: #ff4c70;
+      }
+      .cake-sec{
+        display: flex;
+        gap: 15px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 30px 30px;
+      }
+      .special-cake{
+        font-size: 34px;
+        font-weight: 700;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+      }
+      .cake-subtitle{
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .review-card{
+        width: 270px;
+        height:250px;
+        background-color: #fee8ec;
+        border-radius: 8px;
+        padding: 10px 10px;
+        box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: transform 0.4s ease-in ;
+        transition:  box-shadow 0.4s ease-in ;
+      }
+      .review-card:hover{
+        transform: scale(1.03);
+        box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .review-container{
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .customer-img{
+        height: 80px;
+        width: 80px;
+        border-radius:50%;
+        border: solid 3px #ff4c70;
+        margin-bottom: 10px;
+      }
+    .rew-img{
+       display: flex;
+       margin-bottom:20px;
+       margin-top: 16px;
+       margin-left: 14px;
+    }
+    .rew-title{
+      padding: 22px 13px;
+    }
+    h4{
+      font-size: 18px;
+      font-weight: 700;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .review{
+      font-size: 17px;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       text-align:center;
+       color: rgb(45, 44, 44);
+    }
+    .stars{
+      color: #ffb400;
+      font-size: 20px;
+    }
+    </style>
+</head>
+<body>
+    <!-- Nav bar -->
+    <section>
+        <nav>
+        <div class="left">Bakejoy</div>
+        <div class="right">
+            <ul>
+                <li>Home</li>
+                 <li><a href="./Pages/about.html" class="abt-hover">About</a></li>
+                <li><a href="./Pages/contact.html" class="abt-hover">Contact</a></li>
+                <li><a href="./Pages/login.html"><button>Login</button></a></li>
+                <li><a href="./Pages/signup.html"><button>Sign Up</button></a></li>
+            </ul>
+        </nav>
+        </div>
+    </section>
+
+    <!-- hero section -->
+     <section>
+        <div class="hero-container">
+            <div class="hero-r">
+             <p class="para1">Bake Joy – <em>Happiness in Every Slice</em></p><br>
+             <p class="para2">Welcome to <b style="color: #ff4c70;">Bake Joy</b> – where passion meets sweetness! Our bakers whip up delightful cakes, cookies, and desserts made with the finest ingredients and a sprinkle of love. Whether it’s a birthday, wedding, or just a craving, we’re here to make every moment sweeter.</p><br>
+             <p class="para2">Life’s sweetest moments deserve a Bake Joy cake! From creamy cheesecakes to custom-designed masterpieces, we specialize in turning your celebrations into unforgettable memories. Because every slice tells a story of joy.</p>
+             <a href="./Pages/design.html"><button class="hero-btn">Design Your Cake</button></a>
+            </div>
+            <div class="hero-l">
+                <div class="hero-img">
+                <img src="./images/cake3.jpg" alt="Cake" >
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- cakes card -->
+      <section>
+        <p class="special-cake">Our Special Cakes-<em> Must take a bite</em> </p>
+      <div class="cake-sec">
+            <div class="cake-container">
+          <div class="cake-item">
+            <img src="./images/choco cake.png" alt="Chocolate cake" class="cake-img">  
+          </div>
+            <h3 class="cake-title">Chocolate Fudge Cake </h3>
+            <p style="margin-bottom:7px; text-align: justify; font-size: 17px;" class="cake-subtitle">Rich chocolate cake with decadent chocolate ganache.</p>
+            <div class="cake-btn">
+              <button style="border-radius:7px;">150 Rs</button>
+              <button style="border-radius: 7px;">Order Now</button>
+            </div>
+        </div>
+           
+         <div class="cake-container">
+          <div class="cake-item">
+            <img src="./images/vanilla.png" alt="Vanilla  Cake" class="cake-img">  
+          </div>
+            <h3 class="cake-title">Vanilla Bean Cake </h3>
+            <p style="margin-bottom:7px; text-align: justify; font-size: 17px;" class="cake-subtitle">Fluffy vanilla sponge with creamy vanilla buttercream.</p>
+            <div class="cake-btn">
+              <button style="border-radius:7px;">130 Rs</button>
+              <button style="border-radius: 7px;">Order Now</button>
+            </div>
+        </div>
+
+        <div class="cake-container">
+          <div class="cake-item">
+            <img src="./images/Red velvet.png" alt="Red Velvet" class="cake-img">  
+          </div>
+            <h3 class="cake-title">Red Velvet Delight</h3>
+            <p style="margin-bottom:7px; text-align: justify; font-size: 17px;" class="cake-subtitle">Classic red velvet cake with cream cheese frosting.</p>
+            <div class="cake-btn">
+              <button style="border-radius:7px;">180 Rs</button>
+              <button style="border-radius: 7px;">Order Now</button>
+            </div>
+        </div>
+
+        <div class="cake-container">
+          <div class="cake-item">
+            <img src="./images/Lemon.png" alt="Lemon Raspberry Cake" class="cake-img">  
+          </div>
+            <h3 class="cake-title">Lemon Raspberry Cake </h3>
+            <p style="margin-bottom:7px; text-align: justify; font-size: 17px;" class="cake-subtitle">Tangy lemon cake with fresh raspberry filling.</p>
+            <div class="cake-btn">
+              <button style="border-radius:7px;">110 Rs</button>
+              <button style="border-radius: 7px;">Order Now</button>
+            </div>
+        </div>
+
+        <div class="cake-container">
+          <div class="cake-item">
+            <img src="./images/Pumpkin.png" alt="Pumpkin Spice Cake" class="cake-img">  
+          </div>
+            <h3 class="cake-title">Pumpkin Spice Cake</h3>
+            <p style="margin-bottom:7px; text-align: justify; font-size: 17px;" class="cake-subtitle">Spiced pumpkin cake topped with cinnamon cream cheese frosting.</p>
+            <div class="cake-btn">
+              <button style="border-radius:7px;">140 Rs</button>
+              <button style="border-radius: 7px;">Order Now</button>
+            </div>
+        </div>
+
+        <div class="cake-container">
+          <div class="cake-item">
+            <img src="./images/Strawberry.png" alt="Strawberry Shortcake" class="cake-img">  
+          </div>
+            <h3 class="cake-title">Strawberry Shortcake</h3>
+            <p style="margin-bottom:7px; text-align: justify; font-size: 17px;" class="cake-subtitle">Sponge cake layered with fresh strawberries and  cream.</p>
+            <div class="cake-btn">
+              <button style="border-radius:7px;">150 Rs</button>
+              <button style="border-radius: 7px;">Order Now</button>
+            </div>
+        </div>
+
+        <div class="cake-container">
+          <div class="cake-item">
+            <img src="./images/cheese.png" alt="Classic Cheesecake" class="cake-img">  
+          </div>
+            <h3 class="cake-title">Classic Cheesecake </h3>
+            <p style="margin-bottom:7px; text-align: justify; font-size: 17px;" class="cake-subtitle">Creamy baked cheesecake with a buttery graham cracker crust.</p>
+            <div class="cake-btn">
+              <button style="border-radius:7px;">140 Rs</button>
+              <button style="border-radius: 7px;">Order Now</button>
+            </div>
+        </div>
+        
+
+        <div class="cake-container">
+          <div class="cake-item">
+            <img src="./images/Ginger bread.png" alt="Gingerbread Cake" class="cake-img">  
+          </div>
+            <h3 class="cake-title"> Gingerbread Cake</h3>
+            <p style="margin-bottom:7px; text-align: justify; font-size: 17px;">Rich gingerbread cake with molasses and spices, perfect for winter.</p>
+            <div class="cake-btn">
+              <button style="border-radius:7px;">130 Rs</button>
+              <button style="border-radius: 7px;">Order Now</button>
+            </div>
+        </div>
+
+         <div class="cake-container">
+          <div class="cake-item">
+            <img src="./images/carrot.png" alt="Carrot and Walnut Cake" class="cake-img">  
+          </div>
+            <h3 class="cake-title">Carrot and Walnut Cake</h3>
+            <p style="margin-bottom:7px; text-align: justify; font-size: 17px;" class="cake-subtitle">Moist carrot cake with crunchy walnuts and cream cheese frosting.</p>
+            <div class="cake-btn">
+              <button style="border-radius:7px;">170 Rs</button>
+              <button style="border-radius: 7px;">Order Now</button>
+            </div>
+        </div>
+
+         <div class="cake-container">
+          <div class="cake-item">
+            <img src="./images/apple.png" alt="Apple Cinnamon Cake" class="cake-img">  
+          </div>
+            <h3 class="cake-title">Apple Cinnamon Cake </h3>
+            <p style="margin-bottom:7px; text-align: justify; font-size: 17px;" class="cake-subtitle">Apple cake infused with cinnamon and topped with caramel glaze.</p>
+            <div class="cake-btn">
+              <button style="border-radius:7px;">120 Rs</button>
+              <button style="border-radius: 7px;">Order Now</button>
+            </div>
+        </div>
+      </div>
+      </section>
+
+    <!-- testimonials -->
+       <section>
+         <p class="special-cake">★ Our Customer Reviews ★</p><br><br>
+       <div class="review-container">
+          <div class="review-card">
+          <div class="rew-img">
+          <img src="./images/customer1.png" alt="Customer1" class="customer-img">
+          <div class="rew-title">
+            <h4>Radha Sharma</h4>
+          <div class="stars">★★★★★</div>
+          </div>
+          </div>
+          <p class="review">The chocolate cake I ordered was absolutely delicious! Soft, moist, and beautifully decorated. Will definitely order again.</p>
+        </div>
+        
+
+        <div class="review-card">
+          <div class="rew-img">
+          <img src="./images/customer2.png" alt="Customer2" class="customer-img">
+          <div class="rew-title">
+           <h4>Srinu Shetty</h4>
+          <div class="stars">★★★★☆</div>
+          </div>
+          </div>
+          <p class="review">Great taste and timely delivery. The strawberry shortcake was fresh and flavorful. Slightly sweet for me, but still amazing.</p>
+        </div>
+        
+
+         <div class="review-card">
+          <div class="rew-img">
+          <img src="./images/customer3.png" alt="Customer3" class="customer-img">
+          <div class="rew-title">
+          <h4>Adhaya Gupta</h4>
+          <div class="stars">★★★★☆</div>
+          </div>
+          </div>
+          <p class="review">I ordered a custom birthday cake for my daughter, and it turned out perfect! Everyone loved it. Thank you Bake Joy</p>
+        </div>
+
+        <div class="review-card">
+          <div class="rew-img">
+          <img src="./images/customer4.png" alt="Customer4" class="customer-img">
+          <div class="rew-title">
+          <h4>Aarav Patel</h4>
+          <div class="stars">★★★★★</div>
+          </div>
+          </div>
+          <p class="review">"I loved being able to choose every detail of my cake! It felt so personal, and the final cake was exactly what I imagined."</p>
+        </div>
+
+        <div class="review-card">
+          <div class="rew-img">
+          <img src="./images/customer5.png" alt="Customer5" class="customer-img">
+          <div class="rew-title">
+          <h4>Rudhra Verma</h4>
+          <div class="stars">★★★★☆</div>
+          </div>
+          </div>
+          <p class="review">"The process was super fun. The frosting and topping options were amazing. Would love even more decoration choices next time!"</p>
+        </div>
+        </div>
+
+       </section>
+
+    <!-- footer -->
+      <section>
+        <footer class="footer">
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">
+              <img src="./images/facebook.png" alt="Facebook">
+            </a>
+             <a href="https://twitter.com" target="_blank">
+              <img src="./images/twitter.png" alt="Twitter">
+            </a>
+             <a href="https://instagram.com" target="_blank">
+              <img src="./images/instagram.png" alt="Instagram">
+            </a>
+             <a href="https://linkedin.com" target="_blank">
+              <img src="./images/linkedin.png" alt="LinkedIn">
+            </a>
+             <a href="https://youtube.com" target="_blank">
+              <img src="./images/youtube.png" alt="YouTube">
+            </a>
+          </div>
+           <p class="footer-para"> &copy; 2025 BakeJoy. All Rights Reserved</p>
+        </footer>
+      </section>
+
+</body>
+</html>

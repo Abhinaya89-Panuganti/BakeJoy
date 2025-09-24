@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../styles/Navbar.css">
+    <link rel="stylesheet" href="../styles/Footer.css">
+</head>
+<style>
+    form{
+            display: flex;
+            flex-direction: column;
+            padding:30px 40px ;
+            
+        }
+        .container{
+            height: 600px;
+            display: flex;
+            align-items: center;
+        }
+        .inn-con{
+             border: solid 2px;
+            height: 300pxpx;
+            width: 350px;
+            display: flex;
+           padding: 20px;
+            border-radius: 6px;  
+            margin-bottom: 100px;
+            margin-left: 120px;
+            transition: box-shadow 0.6s ease-in ;
+            transition: transform 0.5s ease-in ; 
+            
+        }
+        .inn-con:hover{
+            box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            transform: scale(1.0);
+        }
+        
+        input{
+            border-radius: 5px;
+            height: 30px;
+            width: 230px;
+           
+        }
+        .sub{
+             margin-top: 30px;
+             width: 100px;
+             margin-left: 65px;
+             transition: background-color 0.4s ease-in;
+        }
+        .sub:hover{
+             background-color: #ff4c70;
+            color: white;
+        }
+        p a{
+            text-decoration: none;
+            color:#ff4c70;
+            font-weight: 700;
+        }
+        p a:hover{
+            color:black;
+        }
+        textarea{
+             border-radius: 5px;
+             border: solid 2px;
+        }  
+        .para1{
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 30px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        }
+        .contact-total{
+            display: flex;
+        }
+        .contact-container{
+            margin-left: 400px; 
+            width: 400px;
+            height: 550px;
+        }
+        .customer-img{
+          height: 80px;
+          width: 80px;
+          border-radius: 50%;
+        }
+        .contact-img{
+            display: flex;
+            margin-bottom:50px;
+            margin-top: 50px;
+            border-radius: 8px;
+            height: 130px;
+            background-color: #fee8ec;
+            box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            transition:  transform 0.4s ease-in;
+        }
+         .contact-img:hover
+         {
+          transform: scale(1.03);
+         }
+        .contact-title{
+           padding: 22px 13px; 
+        }
+        h4{
+            font-size: 23px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #ff4c70;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .contact-para{
+            font-size: 18px;
+        }
+        .contact-img img{
+          height:60px;
+          width: 60px;
+          margin-top:35px;
+          margin-left: 30px;
+        }
+</style>
+<body>
+      <!-- Nav bar -->
+    <section>
+        <nav>
+         <div class="left"> <a href="../index.html">Bakejoy</a></div>
+        <div class="right">
+            <ul>
+                <li><a href="../index.html" class="abt-hover">Home</a></li>
+                 <li><a href="./about.html">About</a></li>
+                <li><a href="" class="abt-hover">Contact</a></li>
+                <li><a href="./login.html"><button>Login</button></a></li>
+                <li><a href="./signup.html"><button>Sign Up</button></a></li>
+               
+            </ul>
+        </nav>
+        </div>
+    </section> 
+    
+    <!-- contact form -->
+    <section>
+    <p class="para1">Contact Us</p><br>
+      <div class="contact-total">
+        <div class="container">
+            <div class="inn-con">
+            <form action="">
+                <h2 style="text-align: center; margin-bottom: 20px; color: #ff4c70;">Send Message</h2>
+                    <label for="text">Fullname</label>
+                    <input type="text">
+
+                    <label for="email">Email</label>
+                    <input type="email">
+                    
+                    <label for="text">Message</label>
+                    <textarea name="message" id="user-message" rows="5" ></textarea>
+
+                    <button class="sub">Submit</button><br>  
+            </form>
+            </div>
+        </div>
+        <div class="contact-container">
+          <div class="contact-img">
+          <img src="../images/address.png" alt="Address" class="customer-img">
+          <div class="contact-title">
+          <h4>Address</h4>
+          <p class="contact-para">4671 Road no:3,Kukatpally Housing Board(KPHB),Hyderabad,500085</p>
+          </div>
+          </div>
+        
+
+        <div class="contact-img">
+          <img src="../images/phone.png" alt="Phone" class="customer-img">
+          <div class="contact-title">
+          <h4>Phone</h4>
+          <p class="contact-para">9354264354</p>
+          <p class="contact-para">7654568948</p>
+          </div>
+          </div>
+        
+        
+        <div class="contact-img">
+          <img src="../images/mail.png" alt="Mail" class="customer-img">
+          <div class="contact-title">
+          <h4>Email</h4>
+          <p class="contact-para">bakejoy@gmail.com</p>
+          </div>
+          </div>
+        </div>
+    </div>
+    </section>
+
+      <!-- footer -->
+      <section>
+        <footer class="footer">
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">
+              <img src="../images/facebook.png" alt="Facebook">
+            </a>
+             <a href="https://twitter.com" target="_blank">
+              <img src="../images/twitter.png" alt="Twitter">
+            </a>
+             <a href="https://instagram.com" target="_blank">
+              <img src="../images/instagram.png" alt="Instagram">
+            </a>
+             <a href="https://linkedin.com" target="_blank">
+              <img src="../images/linkedin.png" alt="LinkedIn">
+            </a>
+             <a href="https://youtube.com" target="_blank">
+              <img src="../images/youtube.png" alt="YouTube">
+            </a>
+          </div>
+           <p class="footer-para"> &copy; 2025 BakeJoy. All Rights Reserved</p>
+        </footer>
+      </section>
+    
+</body>
+</html>
